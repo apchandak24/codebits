@@ -1,0 +1,29 @@
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+    width: 33%;
+}
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+    text-align: center;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+    margin-left:0px;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
+.navbar {min-height: 70px;}
+.navbar-brand {padding: 10px; height: 70px;}
+.navbar-nav > li > a {
+   line-height: 50px;
+   font-size: 15px;    
+}
+
+.selected {
+        background-color: lightgray;
+    }

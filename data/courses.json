@@ -1,0 +1,76 @@
+{"courses":[{
+	"course": "Java",
+    "description":"learn java in 2 months with hands on experience.",
+	"topics": [{
+		"name": "Object oriented programming",
+		"level": 1,
+		"subtopics": [{
+			"name": "What is object oriented"
+		}, {
+			"name": "Object oriented vs procedural programming"
+		}, {
+			"name": "Inheritance"
+		}, {
+			"name": "Polymorphism"
+		},{
+			"name": "Abstraction"
+		},{
+			"name": "Encapsulation"
+		},{
+			"name": "Classes and objects"
+		}]
+	},{
+		"name": "Understanding the language",
+		"level": 2,
+		"subtopics": [{
+			"name": "Hello world program"
+		}, {
+			"name": "Creating a class"
+		},{
+            "name":"Variable declaration"
+        }]
+	}]
+},
+{
+	"course": "C",
+    "description":"learn c in 2 months",
+	"topics": [{
+		"name": "Programming language",
+		"level": 1,
+		"subtopics": [{
+			"name": "Programming languages"
+		}, {
+			"name": "Procedural language"
+		}]
+	},{
+		"name": "Understanding the language",
+		"level": 2,
+		"subtopics": [{
+			"name": "First program"
+		}, {
+			"name": "variable declaration"
+		}]
+	}]
+},
+{
+	"course": "Android",
+    "description":"learn android in 2 months",
+	"topics": [{
+		"name": "Programming language",
+		"level": 1,
+		"subtopics": [{
+			"name": "Programming languages"
+		}, {
+			"name": "Procedural language"
+		}]
+	},{
+		"name": "Understanding the language",
+		"level": 2,
+		"subtopics": [{
+			"name": "First program"
+		}, {
+			"name": "variable declaration"
+		}]
+	}]
+}]
+}

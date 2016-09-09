@@ -1,0 +1,56 @@
+ <div class="container-fluid"  ng-controller="courseCtrl" style="margin-top:10px;padding-right:0px" >
+<div>
+     <div align="center" style="float:left;width:95%;overflow:hidden;">
+         <h4 >Learn new progamming language to begin your incredible journey towards software development</h4>
+         <button type="button" class="btn btn-warning"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSee29TFf8bI05Hq4E9fS7BZ3UmMTuibwmEQx2wF3qHWsrM5Wg/viewform">Register now</a></button>
+     </div>
+     <div  style="float:left;width:5%;overflow:hidden;" align=right>
+        <button class="btn btn-link" style="border:1px solid" ng-click="openSideNavPanel()"><span title="why choose us" class="glyphicon glyphicon-chevron-left" style="font-size:30px" ></span></button>
+
+    </div>
+</div>
+ 
+ <div>
+ <div style="float:left;width:15%;overflow:hidden">
+     <ul class="list-group" ng-repeat="course in courseList">
+                <li id="item{{$index}}" class="list-group-item list-group-item-info" ng-click="getTopics($index)"
+                     ng-class="{active: $index === selected}" style="padding:5px">{{course.course}}</li>  
+     </ul>
+</div>
+ <div  style="float:left;width:80%;overflow:hidden;">
+     <h5 style="margin-left:40px">{{description}}</h5>
+     <ul class="list group" ng-repeat="topic in currentTopic">
+        <li class="list-group-item" style="padding:5px">{{topic.name}}</li>  
+            <ul ng-repeat="subtopic in topic.subtopics">
+                <li>{{subtopic.name}}</li>
+            </ul>
+    </ul>
+</div>
+</div>
+
+<md-sidenav class="md-sidenav-right md-whiteframe-z2"
+        md-component-id="left">
+    <md-toolbar layout="row">
+     <div class="md-toolbar-tools">
+        <h2>
+          <span>Why Choose Us?</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Close Side Panel" ng-click="closeSideNavPanel()">
+          <md-tooltip>Close Side Panel</md-tooltip>
+          <md-icon class="md-default-theme" class="material-icons">X</md-icon>
+        </md-button>
+       </div>
+    </md-toolbar> 
+    <md-content layout-padding="">
+     <ul class="list-group">
+         <li class="list-group-item">Faculty having 4+ years of experience in classroom/corporate training</li>    
+         <li class="list-group-item">100% practical training</li>   
+         <li class="list-group-item">Cover every topic in detail with practical example</li>   
+         <li class="list-group-item">Teaching through live demonstration of program execution</li>
+         <li class="list-group-item">Limited students per batch</li>
+         <li class="list-group-item">Students will get dictations, assignments to gain in-depth knowledge</li>   
+    </ul>
+    </md-content> 
+</md-sidenav>
+</div> 
